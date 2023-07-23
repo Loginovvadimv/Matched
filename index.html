@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Сосисочная</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">Титл сайта</div>
+        <h1 class="header__title">Всратый лозунг на две-три строки</h1>
+        <div class="header__subtitle">cRinge – новый сервис для онлайн-знакомств. Зарегистрируйся сейчас и получите ранний доступ с бесплатной подпиской на 1 год, как только мы запустимся (кароч текст сюда придумать)</div>
+        <button class="header__btn btn" data-modal>Регистрация</button>
+      </div>
+      <div class="header__info">
+        <div class="container">
+          <div class="header__container">
+            <div class="header__text">Обработка персональных данных осуществляется с целью улучшения работы сайта, совершенствования<br>продуктов и услуг, определения предпочтений пользователя, предоставления целевой информации по<br>продуктам и услугам. Все твои данные и голые фото мы сольем мвд и фсб по первому запросу, согласно<br>законам сохранения импульса</div>
+            <div>
+              <button class="header__btn-info">Понятно</button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="main__container">
+          <div class="main__img">
+            <img src="/img/matches.png" alt="matshes">
+          </div>
+          <div class="main__textContainer">
+            <div class="main__title">Умный Матчинг</div>
+            <div class="main__subtitle">А ты нет. AI-технологии для умного поиска партнера c привычными механизмами свайпа, симпатий и хуё-моё</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chats">
+      <div class="container">
+        <div class="chats__container">
+          <div class="chats__img">
+            <img src="/img/chats.png" alt="chats">
+            <div class="chats__massages">
+              <div class="chats__massage">Девушка, я тащусь от вас, как приора по асфальту</div>
+              <div class="chats__answer">
+                <div class="chats__answer-text">Чего, блять 🤦</div>
+                <svg class="chats__tringle" xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" fill="none">
+                  <path d="M12.9905 23.5V11.25V0L0 11.25L12.9905 23.5Z" fill="#F6F7FA"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="chats__textContainer">
+            <div class="chats__title">Чаты</div>
+            <div class="chats__subtitle">Безопасное общение, тут кароч надо текст какой-то не очень длинный, но чтоб было понятно все</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+      <div class="container">
+        <div class="search__container">
+          <div class="search__img">
+            <img src="/img/chats.png" alt="chats">
+          </div>
+          <div class="search__textContainer">
+            <div class="search__title">Eбейший Поиск</div>
+            <div class="search__subtitle">Описание поиска по геолокации, взаимным интересам и всяий такой булшит</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="city">
+      <div class="container">
+        <div class="city__container">
+          <div class="city__img">
+            <img src="/img/city.png" alt="city">
+          </div>
+          <div class="city__textContainer">
+            <div class="city__title">Твой Город</div>
+            <div class="city__subtitle">Проект запускается во всех крупных городах и даже в твоем Нижнем Подзалупинске</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registration">
+      <div class="container">
+        <div class="registration__title">Регистрация</div>
+        <div class="registration__subtitle">Какой-то текст зачем это нужно</div>
+        <form class="registration__form" action="send.js" method="post">
+          <input class="registration__input" type="text" name="mail" placeholder="Email" required>
+          <label class="registration__checkbox-container">
+            <span class="checkbox">
+              <input type="checkbox" class="checkbox" hidden>
+              <span></span>
+            </span>
+            <div class="registration__checkbox-subtitle">Подтверждаю что я не долбоёб/ка</div>
+          </label>
+          <button type="submit" class="registration__btn btn" data-modal>Зарегистрироваться</button>
+        </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__title">footer-скоро</div>
+    </footer>
+    <div class="modal">
+      <div class="modal__dialog">
+          <div class="modal__content">
+              <form class="modal__form" action="#">
+                  <div class="modal__close" data-close>&times;</div>
+                  <div class="modal__title">Регистрация</div>
+                  <div class="modal__subtitle">Какой-то текст зачем это нужно</div>
+                  <input required placeholder="Имя" name="name" type="text" class="modal__input">
+                  <input required placeholder="Возраст" name="Age" maxlength="2" type="text" class="modal__input">
+                  <input required type="text" name="mail" placeholder="Email" class="modal__input">
+                  <input required type="password" placeholder="password" maxlength="25" size="40" name="password" class="modal__input">
+                  <div class="modal__gender">
+                    <input type="checkbox" id="modal__gender-checkbox">
+                    <label for="modal__gender-checkbox" class="modal__gender-label"></label>
+                  </div>
+                  <label class="registration__checkbox-container checkbox__opacity">
+                    <span class="checkbox">
+                      <input type="checkbox" class="checkbox" hidden>
+                      <span></span>
+                    </span>
+                    <div class="registration__checkbox-subtitle">Подтверждаю что я не долбоёб/ка</div>
+                  </label>
+                  <button class="modal__btn">Зарегистрироваться</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+    <script src="js/main.js"></script>
+  </body>
+</html>
